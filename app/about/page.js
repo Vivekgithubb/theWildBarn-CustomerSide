@@ -1,6 +1,6 @@
 import Image from "next/image";
-// import about1 from "@/public/about-1.jpg";
-// import about2 from "@/public/about-1.jpg";
+import about1 from "@/public/about-1.jpg";
+import about2 from "@/public/about-1.jpg";
 import { getCabins } from "../_lib/data-service";
 export const metadata = {
   title: "About of ",
@@ -41,24 +41,20 @@ export default async function AboutPage() {
       </div>
       <div className="col-span-2 relative">
         <Image
-          src="/about-1.jpg"
+          src={about1}
           className="object-contain"
-          width="350"
-          height="350"
-          // placeholder="blur" //only with imported images
-          // quality={80} //only with imported images
+          placeholder="blur" //only with imported images
+          quality={80} //only with imported images
           alt="Family sitting around a fire pit in front of cabin"
         />
       </div>
 
       <div className="relative aspect-square col-span-2">
         <Image
-          src="/about-2.jpg"
-          // placeholder="blur" //only with imported images
-          // quality={80} //only with imported images
+          src={about2}
           className="object-contain"
-          width="350"
-          height="350"
+          placeholder="blur" //only with imported images
+          quality={80}
           alt="Family that manages The Wild Oasis"
         />
       </div>
