@@ -4,6 +4,7 @@ import { differenceInDays, format } from "date-fns";
 import { useReservation } from "./ReservationContext";
 import { createBooking } from "../_lib/actions";
 import Button from "@/app/_components/LoadingButton";
+import Image from "next/image";
 // import { auth } from "../_lib/auth";
 
 function ReservationForm({ cabin, user }) {
@@ -39,7 +40,7 @@ function ReservationForm({ cabin, user }) {
           <img
             // Important to display google profile images
             referrerPolicy="no-referrer"
-            className="h-6 rounded-full"
+            className="h-6 rounded-full "
             src={user.image}
             alt={user.name}
           />
